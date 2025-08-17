@@ -1,13 +1,13 @@
 package Binary_search;
 
-public class Ceiling_of_a_number {
+public class Flloor_of_a_number {
     public static void main(String[] args) {
         int [] arr1 = {2,3,5,9,14,16,18};
-        int target = 2;
-        System.out.println(ceilingNumber(arr1, target));
+        int target = 15;
+        System.out.println(floor(arr1, target));
     }
 
-    static int ceilingNumber(int [] arr, int target){
+    static int floor(int [] arr, int target){
        int start = 0;
         int end = arr.length-1;
         
@@ -26,6 +26,6 @@ public class Ceiling_of_a_number {
                 return mid;  
             }
         }
-        return start;
+        return arr[end];
     }
 }
