@@ -12,8 +12,7 @@ public class Flloor_of_a_number {
         int end = arr.length-1;
         
         while(start <= end){
-            // find the middle element
-            //int mid = (start + end)/2; // might be possible that (start + end) excceed the integer range 
+            
             int mid = start + (end - start)/2; 
             
             if(target < arr[mid]){  
