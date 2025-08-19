@@ -8,9 +8,11 @@ public class Ceiling_of_a_number {
     }
 
     static int ceilingNumber(int [] arr, int target){
-       int start = 0;
+        int start = 0;
         int end = arr.length-1;
-        
+        if (target > arr[arr.length-1]){
+            return -1;
+        }
         while(start <= end){
             // find the middle element
             //int mid = (start + end)/2; // might be possible that (start + end) excceed the integer range 
