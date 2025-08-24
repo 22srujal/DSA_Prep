@@ -6,8 +6,8 @@ public class leetcode_34 {
     } 
     public int [] findRange(int[] nums, int target){
         int[] ans= {-1,-1};
-        int start = Find(nums,target, findStartIndex:true);
-        int end = Find(nums,target, findStartIndex:false);
+        int start = Find(nums,target);
+        int end = Find(nums,target);
         
         ans[0] = start;
         ans[1] = end;
